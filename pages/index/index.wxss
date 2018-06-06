@@ -1,0 +1,57 @@
+.box {
+    display: block;
+    height: 100%;
+}
+.loading {
+    text-align: center;
+    font-size: 22px;
+    color: #999;
+    margin-bottom: 30px;
+}
+.loading image {
+    width: 80px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+.list {
+    background: #FFF;
+    display: block;
+}
+.list-box {
+    display: block;
+    position: relative;
+    padding: 16px 20px;
+    border-bottom: 1px solid #F2F2F2;
+}
+.list-thumbnail {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    height: 40px;
+    width: 40px;
+}
+.list-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #F2F2F2;
+}
+.list-main {
+    margin-left: 50px;
+}
+.list-name {
+    font-size: 14px;
+    color: #444;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.list-description {
+    font-size: 12px;
+    color: #999;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}

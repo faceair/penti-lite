@@ -1,0 +1,5 @@
+@import '../../wxParser/index.wxss'
+
+.wxParser {
+    padding: 0 8px;
+}
