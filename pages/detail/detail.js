@@ -13,12 +13,12 @@ Page( {
                                     replace(/<!.+?>/g, '').
                                     replace(/<(meta|html).+?>/g, '').
                                     replace(/<(title|script|style|ins)[\s\S]+?(title|script|style|ins)>/g, '').
-                                    replace(/<(.+?)(\s.+)?>\s+?(&\w+;?|<br.+?>)?\s+?<\/\1>/g, '').trim()
+                                    replace(/<(.+?)(\s.+)?>\s+?(&nbsp;|<br.+?>)?\s+?<\/\1>/g, '').trim()
 
                 var title = ''
-                var matchs = body.match(/<h2>【.+】(.+)<\/h2>/)
-                if (matchs.length > 0) {
-                    title = matchs[1]
+                var matches = body.match(/<h2>【.+】(.+)<\/h2>/)
+                if (matches.length > 0) {
+                    title = matches[1]
                 }
                 wx.setNavigationBarTitle({
                     title: title

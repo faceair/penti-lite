@@ -22,16 +22,16 @@ Page({
                     var pubDate = articles[i]['pubDate']
 
                     if (pubDate == '1970-01-01 08:00:00') {
-                        var matchs = title.match(/(\d{4})(\d{2})(\d{2})/)
-                        if (matchs.length > 0) {
-                            pubDate = `${matchs[1]}-${matchs[2]}-${matchs[3]} 12:00:00`
+                        var matches = title.match(/(\d{4})(\d{2})(\d{2})/)
+                        if (matches.length > 0) {
+                            pubDate = `${matches[1]}-${matches[2]}-${matches[3]} 12:00:00`
                         }
                     }
 
                     var id = 0
-                    var matchs = link.match(/(\d+)/)
-                    if (matchs.length > 0) {
-                        id = matchs[1]
+                    var matches = link.match(/(\d+)/)
+                    if (matches.length > 0) {
+                        id = matches[1]
                     }
 
                     articles[i] = {

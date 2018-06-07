@@ -154,8 +154,7 @@ const codeMap = {
   '&spades;': '♠',
   '&clubs;': '♣',
   '&hearts;': '♥',
-  '&diams;': '♦',
-  '&#39;': "'"
+  '&diams;': '♦'
 };
 
 /**
@@ -164,6 +163,15 @@ const codeMap = {
  * @return {String}     转换后的字符串
  */
 const transform = (str) => {
+  var regex = /&#(\d+);/gm;
+  let m;
+  while ((m = regex.exec(str)) !== null) {
+      if (m.index === regex.lastIndex) {
+          regex.lastIndex++;
+      }
+      str = str.replace(`&#${m[1]};`, String.fromCodePoint(m[1]))
+  }
+
   for (let code in codeMap) {
     str = str.replace(new RegExp(code, 'g'), codeMap[code]);
   }
