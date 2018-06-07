@@ -1,4 +1,4 @@
-<navigator class="list-box" url="../detail/detail?id={{item.id}}" wx:for="{{articles}}" wx:key="id">
+<navigator class="list-box" url="../article/article?id={{item.id}}" wx:for="{{articles}}" wx:key="id">
     <view class="list-thumbnail">
         <image class="list-img" src="{{item.imgUrl}}" />
     </view>

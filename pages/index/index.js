@@ -36,7 +36,7 @@ Page({
 
                     articles[i] = {
                         id: id,
-                        title: title.replace(/【.+】/, ''),
+                        title: title.replace(/【.+】/g, ''),
                         pubDate: pubDate,
                         imgUrl: articles[i]['imgurl'],
                     }

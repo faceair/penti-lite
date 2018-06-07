@@ -15,10 +15,10 @@ Page( {
                                     replace(/<(title|script|style|ins)[\s\S]+?(title|script|style|ins)>/g, '').
                                     replace(/<(.+?)(\s.+)?>\s+?(&nbsp;|<br.+?>)?\s+?<\/\1>/g, '').trim()
 
-                var title = ''
-                var matches = body.match(/<h2>【.+】(.+)<\/h2>/)
+                var title = '喷嚏图卦'
+                var matches = body.match(/<h2>(【.+】)?(.+)<\/h2>/)
                 if (matches.length > 0) {
-                    title = matches[1]
+                    title = matches[2]
                 }
                 wx.setNavigationBarTitle({
                     title: title

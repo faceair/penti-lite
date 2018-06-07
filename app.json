@@ -1,7 +1,7 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/detail/detail"
+        "pages/article/article"
     ],
     "window": {
         "navigationBarTitleText": "喷嚏图卦"

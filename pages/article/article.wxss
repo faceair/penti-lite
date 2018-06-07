@@ -1,4 +1,4 @@
-@import '../../wxParser/index.wxss'
+@import '../../wxParser/index.wxss';
 
 page {
     margin: 0 14rpx;
