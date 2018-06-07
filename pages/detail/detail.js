@@ -9,10 +9,11 @@ Page( {
             url: 'https://www.dapenti.com/blog/readapp2.asp?name=xilei&id=' + id,
             method: 'GET',
             success: function(res) {
-                var body = res.data.replace(/<!.+?>/g, '').
+                var body = res.data.replace(/(\t|\n)/g, '').
+                                    replace(/<!.+?>/g, '').
                                     replace(/<(meta|html).+?>/g, '').
                                     replace(/<(title|script|style|ins)[\s\S]+?(title|script|style|ins)>/g, '').
-                                    replace(/<(.+?)(\s.+)?>\s+?(&\w+?|<br.+?>)?\s+?<\/\1>/g, '').trim()
+                                    replace(/<(.+?)(\s.+)?>\s+?(&\w+;?|<br.+?>)?\s+?<\/\1>/g, '').trim()
 
                 var title = ''
                 var matchs = body.match(/<h2>【.+】(.+)<\/h2>/)
@@ -42,7 +43,15 @@ Page( {
                         })
                     }
                 })
-            }
+            },
+            fail: function(err) {
+                wx.showToast({
+                    title: `文章加载失败，${err.errMsg}`,
+                    icon: 'none',
+                    duration: 2000,
+                    mask: true
+                })
+            },
         })
     },
 })

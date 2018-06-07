@@ -4,11 +4,10 @@
         "pages/detail/detail"
     ],
     "window": {
-        "backgroundTextStyle": "white",
-        "navigationBarBackgroundColor": "#48C23D",
-        "navigationBarTitleText": "首页",
-        "navigationBarTextStyle": "white",
-        "backgroundColor": "#FFF"
+        "navigationBarTitleText": "喷嚏图卦"
+    },
+    "networkTimeout": {
+      "request": 5000
     },
     "debug": true
 }

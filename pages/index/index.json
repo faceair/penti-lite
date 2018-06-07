@@ -1,3 +1,4 @@
 {
-    "navigationBarTitleText": "喷嚏图卦"
+    "navigationBarTitleText": "喷嚏图卦",
+    "enablePullDownRefresh": true
 }

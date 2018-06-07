@@ -1,0 +1,5 @@
+page {
+    display: block;
+    width: auto;
+    height: 100%;
+}

@@ -1,5 +1,6 @@
 @import '../../wxParser/index.wxss'
 
-.wxParser {
-    padding: 0 8px;
+page {
+    margin: 0 14rpx;
+    font-size: 32rpx;
 }
