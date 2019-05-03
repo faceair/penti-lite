@@ -17,7 +17,7 @@ Page( {
 
                 var title = '喷嚏图卦'
                 var matches = body.match(/<h2>(【.+】)?(.+)<\/h2>/)
-                if (matches.length > 0) {
+                if (matches && matches.length > 0) {
                     title = matches[2]
                 }
                 wx.setNavigationBarTitle({
