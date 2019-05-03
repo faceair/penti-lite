@@ -1,13 +1,14 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/article/article"
-    ],
-    "window": {
-        "navigationBarTitleText": "喷嚏图卦"
-    },
-    "networkTimeout": {
-      "request": 5000
-    },
-    "debug": true
+  "pages": [
+    "pages/index/index",
+    "pages/article/article"
+  ],
+  "window": {
+    "navigationBarTitleText": "喷嚏图卦"
+  },
+  "networkTimeout": {
+    "request": 5000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }
